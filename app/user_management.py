@@ -26,7 +26,7 @@ def get_user(user_id: int) -> Optional[Dict]:
 
 
 def list_users() -> List[Dict]:
-    users = _db.list()
+    users = list(_db.list())
     return sorted(users, key=lambda user: user["email"])
 
 
