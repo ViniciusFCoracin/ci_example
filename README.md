@@ -11,9 +11,8 @@ Este repositório contem um exercício para implementação de um pipeline de CI
 $python -m unittest -v
 ```
 3. Crie um pipeline de CI (GitHub Action) que inclua o download das dependências, o uso de um linter (ex.: flake8) e a execução dos testes. Isso tudo em duas versões do Python (ex.: 3.11 e 3.12).
-```
+
 Documentação: [GitHub Actions Docs](https://docs.github.com/en/actions/get-started/quickstart)
-```
 
 4. Faça o push para o repositório remoto e certifique-se de que a action rodou com sucesso.
 
