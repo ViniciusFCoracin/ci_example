@@ -52,11 +52,11 @@ class TestUserManagement(unittest.TestCase):
         self.assertIsNone(get_user(user["id"]))
 
     def test_list_users_sorted_by_email(self):
-        user1 = create_user("User1", "zeta@domain.com",
+        user1 = create_user("User11", "zeta@domain.com",
                             "StrongP@ssw0rd", "1990-01-01")
-        user2 = create_user("User2", "alpha@domain.com",
+        user2 = create_user("User22", "alpha@domain.com",
                             "StrongP@ssw0rd", "1990-01-01")
-        user3 = create_user("User3", "beta@domain.com",
+        user3 = create_user("User33", "beta@domain.com",
                             "StrongP@ssw0rd", "1990-01-01")
 
         users = [user1, user2, user3]
