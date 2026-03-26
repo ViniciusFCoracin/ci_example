@@ -61,7 +61,11 @@ class TestUserManagement(unittest.TestCase):
 
         users = [user1, user2, user3]
         emails = [user["email"] for user in users]
-        self.assertEqual(emails, ["alpha@domain.com", "beta@domain.com", "zeta@domain.com"])
+        self.assertEqual(emails, [
+        "alpha@domain.com",
+        "beta@domain.com",
+        "zeta@domain.com"
+        ])
 
 if __name__ == "__main__":
     unittest.main()
