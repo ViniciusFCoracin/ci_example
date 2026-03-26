@@ -53,13 +53,13 @@ class TestUserManagement(unittest.TestCase):
 
     def test_list_users_sorted_by_email(self):
         create_user("User11", "zeta@domain.com",
-                            "StrongP@ssw0rd", "1990-01-01")
+                    "StrongP@ssw0rd", "1990-01-01")
         create_user("User22", "alpha@domain.com",
-                            "StrongP@ssw0rd", "1990-01-01")
+                    "StrongP@ssw0rd", "1990-01-01")
         create_user("User33", "beta@domain.com",
-                            "StrongP@ssw0rd", "1990-01-01")
+                    "StrongP@ssw0rd", "1990-01-01")
 
-        users = list(users)
+        users = list_users()
         emails = [user["email"] for user in users]
         self.assertEqual(emails, sorted(emails))
 
